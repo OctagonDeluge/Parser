@@ -124,3 +124,318 @@ INFO: App started working
 INFO: App started working
 фев 07, 2022 12:37:32 PM ChildController checkCredentials
 INFO: User has not confirmed credentials
+фев 07, 2022 6:14:09 PM App start
+INFO: App started working
+фев 07, 2022 6:14:09 PM DataAccess <init>
+SEVERE: Got an exception: 
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at DataAccess.<init>(DataAccess.java:18)
+	at MainController.<init>(MainController.java:38)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:51)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at App.start(App.java:22)
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863)
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326)
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:185)
+	at java.lang.Thread.run(Thread.java:748)
+
+фев 07, 2022 6:18:17 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:18:19 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:18:26 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:18:26 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:18:28 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:18:28 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:18:29 PM DataAccess addStatistics
+INFO: Started to push to database
+фев 07, 2022 6:36:33 PM App start
+INFO: App started working
+фев 07, 2022 6:36:46 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:36:48 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:36:58 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:36:58 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:36:59 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:36:59 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:37:01 PM DataAccess addStatistics
+INFO: Started to push to database
+фев 07, 2022 6:37:01 PM DataAccess addStatistics
+INFO: Pushing website data to database
+фев 07, 2022 6:37:01 PM DataAccess addStatistics
+INFO: Pushing word statistics to database
+фев 07, 2022 6:43:58 PM App start
+INFO: App started working
+фев 07, 2022 6:44:11 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:44:13 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:44:14 PM ChildController checkCredentials
+SEVERE: Got an exception: 
+org.postgresql.util.PSQLException: ВАЖНО: пользователь "dw" не прошёл проверку подлинности (по паролю) (pgjdbc: autodetected server-encoding to be windows-1251, if the message is not readable, please check database logs and/or host, port, dbname, user, password, pg_hba.conf)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:623)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:163)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:466)
+	at org.postgresql.Driver.connect(Driver.java:265)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at DataAccess.setConnection(DataAccess.java:18)
+	at ChildController.checkCredentials(ChildController.java:53)
+	at ChildController.lambda$setStage$0(ChildController.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at com.sun.javafx.stage.WindowPeerListener.closing(WindowPeerListener.java:93)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:147)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:40)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.lambda$handleWindowEvent$4(GlassWindowEventHandler.java:176)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:411)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.handleWindowEvent(GlassWindowEventHandler.java:174)
+	at com.sun.glass.ui.Window.handleWindowEvent(Window.java:1312)
+	at com.sun.glass.ui.Window.notifyClose(Window.java:1217)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:185)
+	at java.lang.Thread.run(Thread.java:748)
+
+фев 07, 2022 6:44:14 PM ChildController checkCredentials
+INFO: Started to setting up workspace
+фев 07, 2022 6:44:50 PM App start
+INFO: App started working
+фев 07, 2022 6:44:55 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:44:59 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:45:00 PM ChildController checkCredentials
+SEVERE: Got an exception: 
+org.postgresql.util.PSQLException: ВАЖНО: пользователь "d" не прошёл проверку подлинности (по паролю) (pgjdbc: autodetected server-encoding to be windows-1251, if the message is not readable, please check database logs and/or host, port, dbname, user, password, pg_hba.conf)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:623)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:163)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:466)
+	at org.postgresql.Driver.connect(Driver.java:265)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at DataAccess.setConnection(DataAccess.java:18)
+	at ChildController.checkCredentials(ChildController.java:53)
+	at ChildController.lambda$setStage$0(ChildController.java:76)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at com.sun.javafx.stage.WindowPeerListener.closing(WindowPeerListener.java:93)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:147)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:40)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.lambda$handleWindowEvent$4(GlassWindowEventHandler.java:176)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:411)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.handleWindowEvent(GlassWindowEventHandler.java:174)
+	at com.sun.glass.ui.Window.handleWindowEvent(Window.java:1312)
+	at com.sun.glass.ui.Window.notifyClose(Window.java:1217)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:185)
+	at java.lang.Thread.run(Thread.java:748)
+
+фев 07, 2022 6:45:00 PM ChildController checkCredentials
+INFO: Started to setting up workspace
+фев 07, 2022 6:45:12 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:45:14 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:45:14 PM ChildController checkCredentials
+SEVERE: Got an exception: 
+org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю) (pgjdbc: autodetected server-encoding to be windows-1251, if the message is not readable, please check database logs and/or host, port, dbname, user, password, pg_hba.conf)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:623)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:163)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:466)
+	at org.postgresql.Driver.connect(Driver.java:265)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at DataAccess.setConnection(DataAccess.java:18)
+	at ChildController.checkCredentials(ChildController.java:53)
+	at ChildController.lambda$setStage$0(ChildController.java:76)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at com.sun.javafx.stage.WindowPeerListener.closing(WindowPeerListener.java:93)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:147)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:40)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.lambda$handleWindowEvent$4(GlassWindowEventHandler.java:176)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:411)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.handleWindowEvent(GlassWindowEventHandler.java:174)
+	at com.sun.glass.ui.Window.handleWindowEvent(Window.java:1312)
+	at com.sun.glass.ui.Window.notifyClose(Window.java:1217)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:185)
+	at java.lang.Thread.run(Thread.java:748)
+
+фев 07, 2022 6:45:14 PM ChildController checkCredentials
+INFO: Started to setting up workspace
+фев 07, 2022 6:45:29 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:45:30 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:45:31 PM ChildController checkCredentials
+INFO: Started to setting up workspace
+фев 07, 2022 6:45:31 PM DataAccess createTables
+INFO: Table 'website' has been created
+фев 07, 2022 6:45:31 PM DataAccess createTables
+INFO: Table 'statistic' has been created
+фев 07, 2022 6:45:31 PM DataAccess createSequences
+INFO: Sequence for table 'website' has been created
+фев 07, 2022 6:45:31 PM DataAccess createSequences
+INFO: Sequence for table 'statistic' has been created
+фев 07, 2022 6:45:31 PM DataAccess setupWorkspace
+INFO: Workspace is ready
+фев 07, 2022 6:46:53 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:46:53 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:46:54 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:46:54 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:47:17 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:47:17 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:47:17 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:47:17 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:47:27 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:47:27 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:47:27 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:47:27 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:47:28 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:47:28 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:47:29 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:47:29 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:47:37 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:47:37 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:47:37 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:47:37 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:47:50 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:47:50 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:47:51 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:47:51 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:48:16 PM MainController setDescSort
+INFO: Started work (DESCENDING SORT)
+фев 07, 2022 6:48:16 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:49:07 PM App start
+INFO: App started working
+фев 07, 2022 6:49:15 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:49:15 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:49:18 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:49:18 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:49:37 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:49:37 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:49:38 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:49:38 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:50:59 PM App start
+INFO: App started working
+фев 07, 2022 6:51:10 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:51:10 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:51:12 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:51:12 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:51:33 PM MainController getStatistics
+INFO: Started work
+фев 07, 2022 6:51:33 PM HTMLParser parse
+INFO: Started work
+фев 07, 2022 6:51:33 PM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 6:51:33 PM MainController sorting
+INFO: Started work
+фев 07, 2022 6:51:52 PM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 6:51:54 PM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 6:51:55 PM DataAccess addStatistics
+INFO: Started to push to database
+фев 07, 2022 6:51:55 PM DataAccess addStatistics
+INFO: Pushing website data to database
+фев 07, 2022 6:51:55 PM DataAccess addStatistics
+INFO: Pushing word statistics to database

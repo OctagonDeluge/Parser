@@ -49,17 +49,22 @@ public class ChildController {
             alert.show();
         } else {
             logger.info("All credentials confirmed");
+            try {
+                dataAccess.setConnection();
+            } catch (SQLException e) {
+                logger.log(Level.SEVERE, "Got an exception: ", e);
+                Alert alert = new Alert(Alert.AlertType.WARNING, e.getMessage());
+                alert.show();
+            }
             window.close();
+
             if (checkBoxTables.isSelected()) {
                 logger.info("Started to setting up workspace");
                 try {
                     dataAccess.setupWorkspace();
                 } catch (SQLException e) {
                     logger.log(Level.SEVERE, "Got an exception: ", e);
-                    Alert alert = new Alert(Alert.AlertType.WARNING, e.getMessage());
-                    alert.show();
                 }
-
             }
         }
     }

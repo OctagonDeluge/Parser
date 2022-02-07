@@ -9,9 +9,19 @@ public class DataAccess {
     private String db_url;
     private String username;
     private String password;
+    private Connection connection;
     private static final Logger logger = Logger.getLogger("logger");
 
-    public Connection getDBConnection() throws SQLException {
+    public void setConnection() throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(db_url, username, password);
+        } catch (ClassNotFoundException e) {
+            logger.log(Level.SEVERE, "Got an exception: ", e);
+        }
+    }
+
+    /*public Connection getDBConnection() throws SQLException {
         Connection connection = null;
         try {
             Class.forName("org.postgresql.Driver");
@@ -20,12 +30,11 @@ public class DataAccess {
             logger.log(Level.SEVERE, "Got an exception: ", e);
         }
         return connection;
-    }
+    }*/
 
     public void addStatistics(String websiteUrl, LinkedHashMap<String, Integer> wordStatistics) throws SQLException {
         logger.info("Started to push to database");
 
-        Connection connection = getDBConnection();
         PreparedStatement prepStatement = connection.prepareStatement("INSERT INTO website (url) VALUES (?)");
         prepStatement.setString(1, websiteUrl);
         prepStatement.execute();
@@ -50,13 +59,12 @@ public class DataAccess {
     }
 
     public void setupWorkspace() throws SQLException {
-        createTables();
-        createSequences();
+        createTables(connection);
+        createSequences(connection);
         logger.info("Workspace is ready");
     }
 
-    private void createTables() throws SQLException {
-        Connection connection = getDBConnection();
+    private void createTables(Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
         statement.execute("create table website (" +
                 " id int not null " +
@@ -76,8 +84,7 @@ public class DataAccess {
         logger.info("Table 'statistic' has been created");
     }
 
-    private void createSequences() throws SQLException {
-        Connection connection = getDBConnection();
+    private void createSequences(Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
         statement.execute(
                     "CREATE SEQUENCE website_id_seq;" +

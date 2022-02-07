@@ -43,6 +43,7 @@ public class MainController {
         logger.info("Started work");
         if (Pattern.matches("\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]", setUrl.getText())) {
             try {
+                wordStatistics.clear();
                 wordStatistics.putAll(HTMLParser.parse(setUrl.getText()));
                 sorting(wordStatistics, ASCENDING);
                 result.clear();
