@@ -1,0 +1,126 @@
+фев 07, 2022 5:53:21 AM App start
+INFO: App started working
+фев 07, 2022 5:53:21 AM MainController <init>
+INFO: Controller initialized
+фев 07, 2022 5:53:38 AM MainController getStatistics
+INFO: Started work
+фев 07, 2022 5:53:38 AM HTMLParser parse
+INFO: Started work
+фев 07, 2022 5:53:40 AM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 5:53:40 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:53:41 AM MainController setAscSort
+INFO: Started work (ASCENDING SORT)
+фев 07, 2022 5:53:41 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:53:42 AM MainController setDescSort
+INFO: Started work (DESCENDING SORT)
+фев 07, 2022 5:53:42 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:53:43 AM MainController setAscSort
+INFO: Started work (ASCENDING SORT)
+фев 07, 2022 5:53:43 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:53:49 AM App start
+INFO: App started working
+фев 07, 2022 5:53:49 AM MainController <init>
+INFO: Controller initialized
+фев 07, 2022 5:54:08 AM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 5:54:10 AM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 5:54:10 AM ChildController checkCredentials
+INFO: Started to setting up workspace
+фев 07, 2022 5:54:11 AM ChildController checkCredentials
+SEVERE: Got an exception: 
+org.postgresql.util.PSQLException: ОШИБКА: отношение "website" уже существует
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2657)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2347)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:337)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:325)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:282)
+	at DataAccess.createTables(DataAccess.java:62)
+	at DataAccess.setupWorkspace(DataAccess.java:54)
+	at ChildController.checkCredentials(ChildController.java:56)
+	at ChildController.lambda$setStage$0(ChildController.java:70)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at com.sun.javafx.stage.WindowPeerListener.closing(WindowPeerListener.java:93)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:147)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.run(GlassWindowEventHandler.java:40)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.lambda$handleWindowEvent$4(GlassWindowEventHandler.java:176)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:411)
+	at com.sun.javafx.tk.quantum.GlassWindowEventHandler.handleWindowEvent(GlassWindowEventHandler.java:174)
+	at com.sun.glass.ui.Window.handleWindowEvent(Window.java:1312)
+	at com.sun.glass.ui.Window.notifyClose(Window.java:1217)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$4(WinApplication.java:185)
+	at java.lang.Thread.run(Thread.java:748)
+
+фев 07, 2022 5:54:32 AM MainController getStatistics
+INFO: Started work
+фев 07, 2022 5:54:32 AM HTMLParser parse
+INFO: Started work
+фев 07, 2022 5:54:33 AM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 5:54:33 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:54:36 AM MainController setDescSort
+INFO: Started work (DESCENDING SORT)
+фев 07, 2022 5:54:36 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:54:37 AM DataAccess addStatistics
+INFO: Started to push to database
+фев 07, 2022 5:54:37 AM DataAccess addStatistics
+INFO: Pushing website data to database
+фев 07, 2022 5:54:37 AM DataAccess addStatistics
+INFO: Pushing word statistics to database
+фев 07, 2022 5:55:59 AM App start
+INFO: App started working
+фев 07, 2022 5:55:59 AM MainController <init>
+INFO: Controller initialized
+фев 07, 2022 5:56:13 AM ChildController connectToDB
+INFO: User confirmed credentials
+фев 07, 2022 5:56:14 AM ChildController checkCredentials
+INFO: All credentials confirmed
+фев 07, 2022 5:56:22 AM MainController getStatistics
+INFO: Started work
+фев 07, 2022 5:56:22 AM HTMLParser parse
+INFO: Started work
+фев 07, 2022 5:56:24 AM HTMLParser parse
+INFO: Finished work
+фев 07, 2022 5:56:24 AM MainController sorting
+INFO: Started work
+фев 07, 2022 5:56:25 AM DataAccess addStatistics
+INFO: Started to push to database
+фев 07, 2022 5:56:25 AM DataAccess addStatistics
+INFO: Pushing website data to database
+фев 07, 2022 5:56:25 AM DataAccess addStatistics
+INFO: Pushing word statistics to database
+фев 07, 2022 5:57:44 AM App start
+INFO: App started working
+фев 07, 2022 5:57:50 AM MainController getStatistics
+INFO: Started work
+фев 07, 2022 5:57:50 AM HTMLParser parse
+INFO: Started work
+фев 07, 2022 12:28:08 PM App start
+INFO: App started working
+фев 07, 2022 12:28:36 PM App start
+INFO: App started working
+фев 07, 2022 12:37:19 PM App start
+INFO: App started working
+фев 07, 2022 12:37:32 PM ChildController checkCredentials
+INFO: User has not confirmed credentials
